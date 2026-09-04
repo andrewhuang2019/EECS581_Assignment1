@@ -15,12 +15,13 @@ Third Prompt: September 4, 2026
 
 ### Copy the exact prompt(s) you used to generate the code.
 First Prompt (September 3, 2026):
+
 Generate me c++ code which takes in an input string with these requirements:
 
-// Returns true if a valid address was found, false otherwise.
-// On success: outAddress holds the 32-bit value,
-// and outPort holds the port number, or -1 if no port was present.
-// On failure: outAddress is set to 0 and outPort is set to -1.
+// Returns true if a valid address was found, false otherwise.\
+// On success: outAddress holds the 32-bit value,\
+// and outPort holds the port number, or -1 if no port was present.\
+// On failure: outAddress is set to 0 and outPort is set to -1.\
 bool extractIPv4(const std::string& str, unsigned long& outAddress, int& outPort);
 
 Every character which is not a digit, period, or colon should be skipped. An address is 4 octets, with each octet 1–3 digits, value 0–255. An optional port may be added, which may follow the last octet: 1–5 digits, value 0–65535. If a colon is present, the port must be fully valid or the entire match — address included — is rejected.
